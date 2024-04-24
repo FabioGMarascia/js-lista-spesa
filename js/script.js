@@ -34,6 +34,6 @@ const list = document.querySelector(`ul`);
 let i = 0;
 while (i < shop_list.length) {
 	const shop_item = shop_list[i];
-	list.innerHTML += `<li>${shop_item}</li>`;
+	list.innerHTML += `<li class="list-group-item fw-bold">${shop_item}</li>`;
 	i++;
 }
