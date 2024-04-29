@@ -37,3 +37,11 @@ while (i < shop_list.length) {
 	list.innerHTML += `<li class="list-group-item fw-bold">${shop_item}</li>`;
 	i++;
 }
+
+let button = document.getElementById("add-element");
+
+button.addEventListener("click", function () {
+	let new_element = document.getElementById("new-element").value;
+	list.innerHTML += `<li class="list-group-item fw-bold">${new_element}</li>`;
+	document.getElementById("new-element").value = " ";
+});
